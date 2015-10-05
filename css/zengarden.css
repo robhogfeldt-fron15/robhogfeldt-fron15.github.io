@@ -1,79 +1,70 @@
 body {
-  /* Location of the image */
-  background-image: url(../images/my.svg);
-  
-  /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
-  
-  /* Background image doesn't tile */
-  background-repeat: no-repeat;
-  
-  /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */    
-  background-attachment: fixed;
-  
-  /* This is what makes the background image rescale based
-     on the container's size */
-  background-size: cover;
-  
-  /* Set a background color that will be displayed
-     while the background image is loading */
-  
+
+
+
+ font-family: 'Alegreya Sans SC', sans-serif;
+ background-repeat: no-repeat;
+
+ 
 }
 
-.preamble{
-  background-color: red;
-  width: 40%;
-}
 
+h1{
+  position: relative;
+  padding-top: 2%;
+  text-align:center;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  
+  font-size: 2.5em;
+  
+}
 .page-wrapper{
-  
-  width: 70%;
+
+
   margin: 0 auto;
+    /* Location of the image */
+  background-image: url(../images/bighead.svg), url(../images/strip1.svg);
+  width: 1200px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, -290px 450px;
+  
+  min-height:380px;
+  
+  -webkit-box-shadow: 3px 11px 52px -1px rgba(0,0,0,0.64);
+  -moz-box-shadow: 3px 11px 52px -1px rgba(0,0,0,0.64);
+  box-shadow: 3px 11px 52px -1px rgba(0,0,0,0.64);
 }
-
-.explanation h3{
-  margin-left: 65%;
+  
+.explanation {
+  margin-left: 30%;
   font-size: 1em;
+  padding: 30px;
 }
-.participation h3{
-  margin-left: 65%
+.participation {
+  margin-left: 30%;
+  padding: 30px;
 }
-.benefits h3{
-  margin-left: 65%
+.benefits {
+  margin-left: 30%;
+  padding: 30px;
 }
-.requirements h3{
-  margin-left: 65%
+.requirements {
+  margin-left: 30%;
+  padding: 30px;
 }
-
-h1 {
-
-/* Safari */
--webkit-transform: rotate(-90deg);
-
-/* Firefox */
--moz-transform: rotate(90eg);
-
-/* IE */
--ms-transform: rotate(90deg);
-
-/* Opera */
--o-transform: rotate(90deg);
-
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
-margin-left: 55%;
-margin-top: 15%;
+.preamble {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 h2 {
 
-/* Safari */
--webkit-transform: rotate(-114deg);
-
-/* Firefox */
--moz-transform: rotate(90eg);
+font-size: 2.4em;
+font-family: 'Alegreya Sans SC', sans-serif;
+margin-left: 35%;
+margin-top: 40px;
+-moz-transform: rotate(90deg);
 
 /* IE */
 -ms-transform: rotate(90deg);
@@ -81,9 +72,66 @@ h2 {
 /* Opera */
 -o-transform: rotate(90deg);
 
+
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-position: fixed;
-margin-left: 53%;
-margin-top: 15%;
+
+}
+@media only screen and (max-width: 320px) {
+
+   body { font-size: 2em; }
+
+}
+
+.summary {
+ 
+    font-size: 1em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    width: 25%;
+    margin-left: 2%;  
+    margin-top: -8.5%;
+}
+
+.summary :nth-child(2){
+  color: antiquewhite;
+  transform: skew(-20deg, -10deg);
+  
+}
+
+.summary :nth-child(2) a{
+  color: antiquewhite;
+  transform: skew(-20deg, -10deg);
+  
+}
+
+#zen-supporting{
+  
+
+  width: 1200px;
+  background-repeat: no-repeat;
+ 
+  min-height:380px;
+}
+
+
+.sidebar {
+	position: absolute;
+	top: 445px;
+	width: 15%;
+	padding: 30px;
+      margin: 0px 0px 5px 0px;
+    width: 540px;
+    overflow: auto;
+    z-index: 2;
+	
+}
+
+.sidebar .designer-name{
+  font-family:  cursive;
+  font-size: 0.8em
+}
+
+.sidebar h3{
+  font-family:  cursive;
+  font-size: 1.8em
 }

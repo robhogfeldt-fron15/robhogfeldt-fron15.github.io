@@ -1,0 +1,226 @@
+/*Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Marvel);
+
+
+.page-wrapper{
+  margin: 0 auto;
+  width: 1200px;
+  min-height:380px;
+  -webkit-box-shadow: 3px 11px 52px -1px rgba(0,0,0,0.64);
+  -moz-box-shadow: 3px 11px 52px -1px rgba(0,0,0,0.64);
+  box-shadow: 3px 11px 52px -1px rgba(0,0,0,0.64);
+  margin-bottom: 150px;
+  background-image: url(../im/road.png);
+  background-repeat: no-repeat;
+
+}
+h1{
+   font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: whitesmoke;
+    height: 80px;
+  
+    
+    
+     margin-left: 5%;
+     padding-top: 20px;
+     
+}
+
+.intro{
+  position: relative;
+}
+.intro h2{
+    margin-top: 100px;
+   
+     
+     margin-left: 55%;
+     color: white;
+     width: 5%;
+     position: absolute;
+   
+}
+.summary{
+       position: absolute;
+    margin-left: 70%;
+    width: 400px;
+    margin-top: 80px;
+    padding-bottom: 900px;
+    font-family: monospace;
+}
+.summary p {
+    color: bisque;
+    background: rgba(0, 54, 54, 0.5);
+    color: white;
+    width: 300px;
+    padding: 30px;
+}
+header h2{
+  margin-top: -40px;
+  font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-color: white;
+  
+}
+
+.preamble{
+margin-top: -20px;
+
+
+}
+.preamble h3{
+  background: rgba(200, 54, 54, 0.5);
+  color: white;
+ 
+  font-family: 'Bangers', cursive;
+  font-size: 2em;
+  letter-spacing: 5px;
+  font-weight: lighter;
+}
+
+.preamble h3{
+  background: rgba(200, 54, 54, 0.5);
+  padding: 20px;
+}
+.preamble p{
+   font-family: 'Dosis', sans-serif;
+   color: bisque;
+}
+ .preamble p:nth-child(2){
+    background: rgba(200, 54, 54, 0.5);
+    width: 50%;
+    padding: 5px;
+    padding-left: 20px;
+ }
+ 
+  .preamble p:nth-child(3){
+    background: rgba(200, 54, 54, 0.5);
+    width: 50%;
+    padding: 5px;
+    padding-left: 20px;
+ }
+ 
+  .preamble p:nth-child(4){
+    background: rgba(200, 54, 54, 0.5);
+    width: 50%;
+    padding: 5px;
+    padding-left: 20px;
+ }
+
+.supporting {
+     margin-left: 5%;
+    font-size: 1em;
+    padding: 30px;
+    margin-top: 8px;
+
+}
+
+
+
+.explanation {
+  margin-left: 35%;
+  font-size: 1em;
+  padding: 30px;
+
+}
+.participation {
+  margin-left: 35%;
+  padding: 30px;
+}
+.benefits {
+  margin-left: 35%;
+  padding: 30px;
+}
+.requirements {
+  margin-left: 35%;
+  padding: 30px;
+}
+
+
+.sidebar {
+	position: absolute;
+	top: 600px;
+	width: 1200px;
+	padding: 30px;
+      margin: 0px 0px 5px 0px;  
+      overflow: auto;
+      z-index: 2;
+      
+}
+sidebar .designer-name{
+  font-family:  cursive;
+  font-size: 0.5em;
+  
+  
+}
+
+
+
+
+
+footer{
+  text-align: center;
+}
+footer a{
+  background-color: black;
+  padding: 15px;
+  font-size: 2em;
+  color: white;
+  
+  margin-bottom: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#zen-supporting  h3{
+  font-family: 'Marvel', sans-serif;
+  font-size: 2em;
+  text-decoration: none;
+  width: 500px;
+}
+
+#zen-supporting  p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em;
+  text-decoration: none;
+ 
+}
+
+/*SideBar*/
+.sidebar{
+  border-style: solid;
+    border-width: 5px;
+    width: 15%;
+    position: absolute;
+}
+.sidebar ul{
+  list-style-type: none;
+    
+}
+.design-selection{
+  font-family: 'Marvel', sans-serif;
+  font-size: 1.6em;
+  text-decoration: none;
+  
+}
+
+.designer-name{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.5em;
+  text-decoration: none;
+  text-align: right;
+ 
+}
+
+.design-archives{
+  font-family: 'Marvel', sans-serif;
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
+.zen-resources{
+  font-family: 'Marvel', sans-serif;
+  font-size: 1.6em;
+  text-decoration: none;
+}

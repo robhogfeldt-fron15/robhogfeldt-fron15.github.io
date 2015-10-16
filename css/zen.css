@@ -1,6 +1,6 @@
 /*Fonts*/
 @import url(https://fonts.googleapis.com/css?family=Marvel);
-
+@import url(https://fonts.googleapis.com/css?family=Armata|Anton|Audiowide);
 
 .page-wrapper{
   margin: 0 auto;
@@ -12,6 +12,7 @@
   margin-bottom: 150px;
   background-image: url(../im/road.png);
   background-repeat: no-repeat;
+  position: relative;
 
 }
 h1{
@@ -79,6 +80,7 @@ margin-top: -20px;
 .preamble h3{
   background: rgba(200, 54, 54, 0.5);
   padding: 20px;
+     
 }
 .preamble p{
    font-family: 'Dosis', sans-serif;
@@ -178,6 +180,7 @@ a{
   font-size: 2em;
   text-decoration: none;
   width: 500px;
+  
 }
 
 #zen-supporting  p{
@@ -191,7 +194,7 @@ a{
 .sidebar{
   border-style: solid;
     border-width: 5px;
-    width: 15%;
+    width: 30%;
     position: absolute;
 }
 .sidebar ul{
@@ -200,7 +203,7 @@ a{
 }
 .design-selection{
   font-family: 'Marvel', sans-serif;
-  font-size: 1.6em;
+  font-size: 1.4em;
   text-decoration: none;
   
 }
@@ -215,7 +218,7 @@ a{
 
 .design-archives{
   font-family: 'Marvel', sans-serif;
-  font-size: 1.6em;
+  font-size: 1.4em;
   text-decoration: none;
 }
 
@@ -223,4 +226,20 @@ a{
   font-family: 'Marvel', sans-serif;
   font-size: 1.6em;
   text-decoration: none;
+}
+
+li
+{
+background-image: url(../im/star.jpg);
+background-size: 15px;
+background-repeat: no-repeat;
+
+padding-left: 1.2em;
+}
+
+#zen-explanation > h3{
+  font-size: 3em;
+  font-family: 'Audiowide', cursive;
+  width: 100%;
+  margin-top: 23px;
 }

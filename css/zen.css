@@ -1,6 +1,8 @@
+
 /*Fonts*/
 @import url(https://fonts.googleapis.com/css?family=Marvel);
 @import url(https://fonts.googleapis.com/css?family=Armata|Anton|Audiowide);
+
 
 .page-wrapper{
   margin: 0 auto;
@@ -15,6 +17,10 @@
   position: relative;
   background-color: black;
 
+
+
+  
+  
 }
 h1{
    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -81,7 +87,7 @@ margin-top: -20px;
 .preamble h3{
   background: rgba(200, 54, 54, 0.5);
   padding: 20px;
-     
+
 }
 .preamble p{
    font-family: 'Dosis', sans-serif;
@@ -109,13 +115,22 @@ margin-top: -20px;
  }
 
 .supporting {
+
  
     font-size: 1em;
     padding: 30px;
     margin-top: 8px;
+     margin-left: 5%;
+    font-size: 1em;
+    padding: 30px;
+    margin-top: 120px;
 
 }
 
+
+
+
+    
 
 
 .explanation {
@@ -277,3 +292,4 @@ padding-left: 1.2em;
   color: white;
   margin-top: 10px;
   }
+

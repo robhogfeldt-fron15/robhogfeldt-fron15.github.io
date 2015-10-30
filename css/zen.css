@@ -1,6 +1,7 @@
 /*Fonts*/
 @import url(https://fonts.googleapis.com/css?family=Marvel);
-@import url(https://fonts.googleapis.com/css?family=Armata|Anton|Audiowide);
+@import url(https://fonts.googleapis.com/css?family=Armata|Anton|Audiowide|Dosis|Bangers|Pacifico);
+
 
 
 .page-wrapper{
@@ -14,66 +15,59 @@
   background-image: url(../im/road.png);
   background-repeat: no-repeat;
   position: relative;
-  
-
-
-
-  
-  
 }
+
 h1{
-   font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   color: whitesmoke;
-   height: 80px;   
-   margin-left: 5%;
-   padding-top: 20px;
-     
+    font-family: 'Pacifico', cursive;
+    font-weight:  100;
+    color: whitesmoke;
+    height: 80px;
+    margin-left: 4.5%;
+    font-size: 3em;
+    padding-top: 20px;
+    margin-top: 40%;
+    position: absolute;
+    color: rgba(211, 84, 0, 0.8);  
 }
 
 .intro{
   position: relative;
+  padding-top: 5%;
 }
 .intro h2{
-    margin-top: 100px;
-   
-     
-     margin-left: 55%;
-     color: white;
-     width: 5%;
-     position: absolute;
-   
+  margin-top: 100px;
+  margin-left: 55%;
+  color: white;
+  width: 5%;
+  position: absolute; 
 }
 .summary{
-       position: absolute;
-    margin-left: 70%;
-    width: 400px;
-    margin-top: 80px;
-    padding-bottom: 900px;
-    font-family: monospace;
+  position: absolute;
+  margin-left: 70%;
+  width: 400px;
+  margin-top: 80px;
+  padding-bottom: 900px;
+  font-family: monospace;
 }
 .summary p {
-    color: bisque;
-    background: rgba(0, 54, 54, 0.5);
-    color: white;
-    width: 300px;
-    padding: 30px;
+  color: bisque;
+  background: rgba(0, 54, 54, 0.5);
+  color: white;
+  width: 300px;
+  padding: 30px;
 }
 header h2{
   margin-top: -40px;
   font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-color: white;
-  
+  color: white;
 }
 
 .preamble{
-margin-top: -20px;
-
-
+ margin-top: -20px;
 }
 .preamble h3{
   background: rgba(200, 54, 54, 0.5);
   color: white;
- 
   font-family: 'Bangers', cursive;
   font-size: 2em;
   letter-spacing: 5px;
@@ -83,7 +77,6 @@ margin-top: -20px;
 .preamble h3{
   background: rgba(200, 54, 54, 0.5);
   padding: 20px;
-
 }
 .preamble p{
    font-family: 'Dosis', sans-serif;
@@ -95,14 +88,12 @@ margin-top: -20px;
     padding: 5px;
     padding-left: 20px;
  }
- 
   .preamble p:nth-child(3){
     background: rgba(200, 54, 54, 0.5);
     width: 50%;
     padding: 5px;
     padding-left: 20px;
  }
- 
   .preamble p:nth-child(4){
     background: rgba(200, 54, 54, 0.5);
     width: 50%;
@@ -111,29 +102,19 @@ margin-top: -20px;
  }
 
 .supporting {
-
- 
     font-size: 1em;
     padding: 30px;
-        margin-top: 90px;
+    margin-top: 90px;
     font-size: 1em;
     padding: 30px;
-   
     background-image: url(../im/wood.png);
     background-position: center top 20%;
-  background-repeat: no-repeat;
-
+    background-repeat: no-repeat;
 }
-
-
-
-    
-
 
 .explanation {
   margin-left: 35%;
   padding: 30px;
-
 }
 .participation {
   margin-left: 35%;
@@ -144,10 +125,8 @@ margin-top: -20px;
   padding: 30px;
 }
 .requirements {
-  margin-left: 35%;
   padding: 30px;
 }
-
 
 footer{
   text-align: center;
@@ -170,48 +149,40 @@ a{
   font-size: 2em;
   text-decoration: none;
   width: 500px;
-  
 }
-
 #zen-supporting  p{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- 
   text-decoration: none;
- 
 }
 
 /*SideBar*/
 
 .sidebar {
-	position: absolute;
-	top: 800px;
-	width: 27%;
-	padding: 30px;
-   background: rgba(20, 54, 54, 0.8);
+     position: absolute;
+    top: 35.7%;
+    width: 27%;
+    margin-left: 2.5%;
+    padding: 30px;
+    background: rgba(192, 57, 43,0.8);
     color: white;
-     
-      overflow: auto;
-      z-index: 2;
-      
+    overflow: auto;
+    z-index: 2;
+        
 }
 sidebar .designer-name{
   font-family:  cursive;
   font-size: 0.5em;
-  
-  
 }
 
 
 .sidebar ul{
-  list-style-type: none;
-    
+  list-style-type: none;  
 }
 
 .design-selection{
   font-family: 'Marvel', sans-serif;
   font-size: 1.3em;
   text-decoration: none;
-  
 }
 
 .designer-name{
@@ -219,7 +190,6 @@ sidebar .designer-name{
   font-size: 0.5em;
   text-decoration: none;
   text-align: right;
- 
 }
 
 .design-archives{
@@ -236,29 +206,25 @@ sidebar .designer-name{
 
 li
 {
-background-image: url(../im/star.jpg);
-background-size: 15px;
-background-repeat: no-repeat;
-
-padding-left: 1.2em;
+  background-image: url(../im/star.jpg);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  padding-left: 1.2em;
 }
 
-
-
-  
   #zen-participation{
-   background: rgba(200, 54, 54, 0.7);
+  background: rgba(200, 54, 54, 0.7);
   color: white;
   }
   
    #zen-benefits{
     background: rgba(20, 54, 54, 0.8);
-  color: white;
-  margin-top: 10px;
+    color: white;
+    margin-top: 10px;
   }
   
    #zen-explanation{
-  background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     margin-left: 35%;
     font-size: 1em;
@@ -268,7 +234,7 @@ padding-left: 1.2em;
   }
   
   #zen-requirements{
-  background: rgba(20, 54, 54, 0.8);
+  background: rgba(211, 84, 0, 0.8);
   color: white;
   margin-top: 10px;
   }

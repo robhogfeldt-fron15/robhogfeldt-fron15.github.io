@@ -1,0 +1,25 @@
+.red{
+		background-color: red;
+		width: 400px;
+		padding: 90px;
+	}
+	.btn-warning, .btn-primary,.btn-success{
+
+		float: right;
+		margin-left: 10px;
+	}
+	#todos{
+		list-style-type: none;
+		padding: 0;
+	}
+	#todos li{
+		margin-top: 20px;
+
+	}
+	#task{
+		width: 100%;
+	}
+	.hide{
+		display: hidden;
+		float: left;
+	}

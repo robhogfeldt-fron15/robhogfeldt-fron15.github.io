@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>C1-todo</title>
+
+
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="all">
+
+	<!--My styles-->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	
+	
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+	// Krävdes för att jquery mobile-skulle funka
+    $(document).bind('mobileinit',function(){
+        $.mobile.changePage.defaults.changeHash = false;
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+    });
+</script> 
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="./style.css"/>
+
+</head>
+
+
+<body>
+
+	<div class="container">
+		<div class="row">
+		  <div class="col-md-6">
+			<h1>Todo</h1>
+			 <a href="#myPopupDialog" id="myPopup" data-rel="popup" data-position-to="window" data-transition="fade" class="hide ui-btn ui-corner-all ui-shadow ui-btn-inline"></a>
+			 <!--pop-up för edit START-->
+			 <div data-role="main" class="ui-content">
+				<div data-role="popup" id="myPopupDialog">
+				<div data-role="header">
+					<h1>Edit Todo</h1>
+				</div>
+			
+				<div data-role="main" class="ui-content">				
+					<input id="edit" type="text" name="" value="">			
+					<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" onclick="updateEdit(this)" data-rel="back">Edit!</a>
+				</div>			
+				</div>
+			</div>
+			 <!--pop-up för edit END-->
+
+			<hr>
+			<input id="task" type="text"  value="Submit"><button id="add" onclick="addTodo()">Add</button>
+			 <ul id="todos">
+
+			 </ul>
+		 </div>
+		 <div class="col-md-6">
+			 <h1>Completed Todos</h1>
+
+			<hr>
+			 <ul id="completed">
+
+			 </ul>
+			 </div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="./script.js"></script>
+</html>

@@ -8,11 +8,11 @@
 		float: right;
 		margin-left: 10px;
 	}
-	#todos{
+	#todos #completed{
 		list-style-type: none;
 		padding: 0;
 	}
-	#todos li{
+	#todos li, #completed li{
 		margin-top: 20px;
 
 	}

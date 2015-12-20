@@ -1,3 +1,6 @@
+
+
+
 var addTodo = function(){
 
 	  var id = getItemsCount();
@@ -14,7 +17,7 @@ var addTodo = function(){
 	}
 var clearInput = function(){
 	var input = document.getElementById('task');
-	input.textContent = "";
+	input.value = "";
 }
 
 var getItemsCount = function(){
@@ -59,7 +62,7 @@ function createTodo(todo) {
   doneBtn.addEventListener("click", function(event) {
   doneTodo(todo.id);
 });
- 
+ clearInput();
 }
 
 function deleteTodo(id){
@@ -69,15 +72,30 @@ function deleteTodo(id){
   
 }
 
+function deleteCompleted(id){
+ id.parentNode.parentNode.removeChild(id.parentNode);
+  
+}
 
 
 function doneTodo(id){		
     var completedTodo = document.getElementById(id);
 	var completedList = document.getElementById('completed');
 	var li = document.createElement("li");
+	//Knapp för att ta-bort ifrån completed
+	var deleteBtn = document.createElement("button");
+	deleteBtn.setAttribute('class', 'btn btn-warning');
+	deleteBtn.innerHTML = 'Delete';
+		
+			
     li.appendChild(document.createTextNode(completedTodo.firstChild.nodeValue))	
+	li.appendChild(deleteBtn);
 	completedList.appendChild(li);
 	deleteTodo(id);
+	
+	deleteBtn.addEventListener("click", function(event) {
+  deleteCompleted(this);
+});
 }
 
 

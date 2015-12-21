@@ -3,18 +3,25 @@
 
 var addTodo = function(){
 
-	  var id = getItemsCount();
+	var id = getItemsCount();
 
-
-		var task = document.getElementById('task');
-		var ul = document.getElementById('todos');
-		var todoItem = document.createElement('li');
-		todoItem.innerHTML = task.value;
-		todoItem.setAttribute('id','myId' + id);
-		ul.appendChild(todoItem);
-		createTodo(todoItem, id);
+	var task = document.getElementById('task');
+	var ul = document.getElementById('todos');
+	var todoItem = document.createElement('li');
+	todoItem.setAttribute('id','myId' + id);
+		
+	//Förhindra script
+	todoItem.innerHTML = preventScripts(task.value);
+	
+	ul.appendChild(todoItem);
+	
+	createTodo(todoItem, id);
 
 	}
+	
+var preventScripts = function(val){
+	return val.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}	
 var clearInput = function(){
 	var input = document.getElementById('task');
 	input.value = "";
@@ -33,25 +40,30 @@ var getItemsCount = function(){
 }
 
 function createTodo(todo) {
-
+	
+	var lineBreak = document.createElement('hr');
+  
+  var buttonContainer = document.createElement('div');
+  buttonContainer.setAttribute('class', 'col-xs-12')
 
   var deleteBtn = document.createElement("button");
-  deleteBtn.setAttribute('class', 'btn btn-warning');
+  deleteBtn.setAttribute('class', 'btn btn-warning col-xs-3');
   deleteBtn.innerHTML = 'Delete';
 
   var editBtn = document.createElement("button");
-  editBtn.setAttribute('class', 'btn btn-primary');
+  editBtn.setAttribute('class', 'btn btn-primary col-xs-3');
   editBtn.innerHTML = 'Edit';
 
   var doneBtn = document.createElement("button");
-  doneBtn.setAttribute('class', 'btn btn-success');
+  doneBtn.setAttribute('class', 'btn btn-success col-xs-3');
   doneBtn.innerHTML = 'Done!';
 
 
-  todo.appendChild(editBtn);
-  todo.appendChild(deleteBtn);
-  todo.appendChild(doneBtn);
-
+  buttonContainer.appendChild(editBtn);
+  buttonContainer.appendChild(deleteBtn);
+  buttonContainer.appendChild(doneBtn);
+ 
+ todo.appendChild(buttonContainer);
 
    editBtn.addEventListener("click", function(event) {
    editTodo(todo.id);
